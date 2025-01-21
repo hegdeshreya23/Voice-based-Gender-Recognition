@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.com/SuperKogito/Voice-based-gender-recognition.svg?branch=master)](https://travis-ci.com/SuperKogito/Voice-based-gender-recognition)
-
 # Voice-based-gender-recognition
 Voice based gender recognition using:
   - **The Free ST American English Corpus dataset (SLR45)**
@@ -20,7 +18,6 @@ MFCCs are commonly derived as follows:
 5. The MFCCs are the amplitudes of the resulting spectrum.
 
 #### Gaussian Mixture Model
-According to D. Reynolds in [Gaussian_Mixture_Models](https://pdfs.semanticscholar.org/734b/07b53c23f74a3b004d7fe341ae4fce462fc6.pdf):
 A Gaussian Mixture Model (GMM) is a parametric probability density function represented as a weighted sum of Gaussian component densities. GMMs are commonly used as a parametric model of the probability distribution of continuous measurements or features in a biometric system, such as vocal-tract related spectral features in a speaker recognition system. GMM parameters are estimated from training data using the iterative Expectation-Maximization (EM) algorithm or Maximum A Posteriori(MAP) estimation from a well-trained prior model.
 
 #### Workflow graph
@@ -29,9 +26,6 @@ A Gaussian Mixture Model (GMM) is a parametric probability density function repr
 </p>
 
 ---------------  
-- #### For a more detailed explanation, please refer to this [blog](https://superkogito.github.io/blog/VoiceBasedGenderRecognition.html) that I have written.
------------------
-
 ## Dependencies
 This script require the follwing modules/libraries:
 * [numpy](http://www.numpy.org/) & [scipy](https://www.scipy.org/) & [scikit-learn](https://scikit-learn.org/stable/) & [python_speech_features](https://github.com/jameslyons/python_speech_features)
@@ -47,9 +41,6 @@ pip install -r requirements.txt
 - [GenderIdentifier.py](Code/GenderIdentifier.py):This script is responsible for Testing the system by identifying the genders of the testing set.
 - [FeaturesExtractor.py](Code/FeaturesExtractor.py):This script is responsible for extracting the MFCC features from the .wav files.
 
-## Results and disscussion
+## Results 
 - The system results in a **95%** accuracy of gender detection.
-- The code can be further optimized using multi-threading, acceleration libs and multi-processing.
-- The accuracy can be further improved using GMM normalization aka a UBM-GMM system.
-# GENAI_project
-# GENAI_project
+
